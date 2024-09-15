@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	ans := problems.AngleClock(3, 15)
+	ans := problems.AngleClock(12, 0)
 	fmt.Println(ans)
 }
