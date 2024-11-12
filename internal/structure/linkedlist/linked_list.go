@@ -18,10 +18,22 @@ func NewLinkedList(head *listnode.ListNode) *LinkedList {
 }
 
 func (l *LinkedList) Print(w io.Writer) {
-	temp := l.Head
+	head := l.Head
 
-	for temp != nil {
-		fmt.Fprint(w, temp.Value, "-->")
-		temp = temp.Next
+	for head != nil {
+		fmt.Fprint(w, head.Value, "-->")
+		head = head.Next
 	}
+}
+func (l *LinkedList) Search(target int) *listnode.ListNode {
+	head := l.Head
+
+	for head != nil {
+		if head.Value == target {
+			return head
+		}
+		head = head.Next
+	}
+
+	return nil
 }
