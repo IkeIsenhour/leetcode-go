@@ -40,3 +40,47 @@ func TestSearch(t *testing.T) {
 		utility.AssertEquality(t, got, want)
 	})
 }
+
+func TestInsert(t *testing.T) {
+	d := listnode.NewListNode(4, nil)
+	c := listnode.NewListNode(3, d)
+	b := listnode.NewListNode(2, c)
+	a := listnode.NewListNode(1, b)
+	ll := NewLinkedList(a)
+
+	t.Run("insert middle success", func(t *testing.T) {
+		ll.Insert(7, 3)
+
+		var output bytes.Buffer
+
+		ll.Print(&output)
+		got := output.String()
+		want := "1-->2-->7-->3-->4-->"
+
+		utility.AssertEquality(t, got, want)
+	})
+
+	t.Run("insert first success", func(t *testing.T) {
+		ll.Insert(10, 1)
+
+		var output bytes.Buffer
+
+		ll.Print(&output)
+		got := output.String()
+		want := "10-->1-->2-->7-->3-->4-->"
+
+		utility.AssertEquality(t, got, want)
+	})
+
+	t.Run("insert past length success", func(t *testing.T) {
+		ll.Insert(13, 27)
+
+		var output bytes.Buffer
+
+		ll.Print(&output)
+		got := output.String()
+		want := "10-->1-->2-->7-->3-->4-->13-->"
+
+		utility.AssertEquality(t, got, want)
+	})
+}

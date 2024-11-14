@@ -37,3 +37,26 @@ func (l *LinkedList) Search(target int) *listnode.ListNode {
 
 	return nil
 }
+
+func (l *LinkedList) Insert(val int, position int) *listnode.ListNode {
+	if position == 1 {
+		newNode := listnode.NewListNode(val, l.Head)
+		l.Head = newNode
+		return newNode
+	}
+
+	temp := l.Head
+	for i := 1; i < position-1; i++ {
+		if temp.Next == nil {
+			newNode := listnode.NewListNode(val, nil)
+			temp.Next = newNode
+			return newNode
+		}
+		temp = temp.Next
+	}
+
+	newNode := listnode.NewListNode(val, temp.Next)
+	temp.Next = newNode
+
+	return newNode
+}

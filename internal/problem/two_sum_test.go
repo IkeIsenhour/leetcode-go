@@ -11,7 +11,7 @@ func TestTwoSum(t *testing.T) {
 
 	t.Run("successful TwoSum #1", func(t *testing.T) {
 		got := TwoSum(arr, 9)
-		want := []int{0, 3}
+		want := []int{3, 0}
 
 		utility.AssertSliceEquality(t, got, want)
 	})
