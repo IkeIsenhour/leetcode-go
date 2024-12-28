@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/IkeIsenhour/leetcode-go/internal/structure/listnode"
-	"github.com/IkeIsenhour/leetcode-go/internal/utility"
+	utilityGoTest "github.com/IkeIsenhour/utility-go/pkg/test"
 )
 
 func TestPrint(t *testing.T) {
@@ -21,7 +21,7 @@ func TestPrint(t *testing.T) {
 		got := output.String()
 		want := "1-->2-->3-->"
 
-		utility.AssertEquality(t, got, want)
+		utilityGoTest.AssertEquality(t, got, want)
 	})
 }
 
@@ -37,7 +37,7 @@ func TestSearch(t *testing.T) {
 		got := node.Value
 		want := 3
 
-		utility.AssertEquality(t, got, want)
+		utilityGoTest.AssertEquality(t, got, want)
 	})
 }
 
@@ -57,7 +57,7 @@ func TestInsert(t *testing.T) {
 		got := output.String()
 		want := "1-->2-->7-->3-->4-->"
 
-		utility.AssertEquality(t, got, want)
+		utilityGoTest.AssertEquality(t, got, want)
 	})
 
 	t.Run("insert first success", func(t *testing.T) {
@@ -69,7 +69,7 @@ func TestInsert(t *testing.T) {
 		got := output.String()
 		want := "10-->1-->2-->7-->3-->4-->"
 
-		utility.AssertEquality(t, got, want)
+		utilityGoTest.AssertEquality(t, got, want)
 	})
 
 	t.Run("insert past length success", func(t *testing.T) {
@@ -81,6 +81,6 @@ func TestInsert(t *testing.T) {
 		got := output.String()
 		want := "10-->1-->2-->7-->3-->4-->13-->"
 
-		utility.AssertEquality(t, got, want)
+		utilityGoTest.AssertEquality(t, got, want)
 	})
 }

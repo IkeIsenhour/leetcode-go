@@ -3,7 +3,7 @@ package problem
 import (
 	"testing"
 
-	"github.com/IkeIsenhour/leetcode-go/internal/utility"
+	utilityGoTest "github.com/IkeIsenhour/utility-go/pkg/test"
 )
 
 func TestTwoSum(t *testing.T) {
@@ -13,6 +13,6 @@ func TestTwoSum(t *testing.T) {
 		got := TwoSum(arr, 9)
 		want := []int{3, 0}
 
-		utility.AssertSliceEquality(t, got, want)
+		utilityGoTest.AssertSliceEquality(t, got, want)
 	})
 }
