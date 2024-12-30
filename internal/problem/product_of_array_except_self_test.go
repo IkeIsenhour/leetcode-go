@@ -15,4 +15,12 @@ func TestProductOfArrayexceptSelf(t *testing.T) {
 
 		utilityGoTest.AssertSliceEquality(t, got, want)
 	})
+
+	t.Run("success with 0", func(t *testing.T) {
+		nums := []int{1, 2, 3, 4, 0}
+		got := ProductOfArrayExceptSelf(nums)
+		want := []int{0, 0, 0, 0, 24}
+
+		utilityGoTest.AssertSliceEquality(t, got, want)
+	})
 }
