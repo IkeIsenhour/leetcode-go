@@ -25,4 +25,13 @@ func TestBinarySearch(t *testing.T) {
 
 		utilityGoTest.AssertEquality(t, nums[got], want)
 	})
+
+	t.Run("success #3", func(t *testing.T) {
+		nums := []int{0, 1}
+		want := 0
+
+		got := BinarySearch(nums, want)
+
+		utilityGoTest.AssertEquality(t, nums[got], want)
+	})
 }
