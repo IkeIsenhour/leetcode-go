@@ -1,2 +1,4 @@
 github.com/IkeIsenhour/utility-go v0.0.0-20250102015120-0854a0db0803 h1:dt8P9KnS5641z0f7bVa7SkLBnrdqVmd0AtXFgpStj0U=
 github.com/IkeIsenhour/utility-go v0.0.0-20250102015120-0854a0db0803/go.mod h1:5QoB2i4O1Jf0aRiBZF3epX8SBtSNse/vkm1MAEF9HKo=
+github.com/IkeIsenhour/utility-go v0.0.0-20250129074708-cc4329f3a409 h1:2EW87SpCMkLZ8BANxgw+RJnfDY9ypEyRy3ELskMMrjc=
+github.com/IkeIsenhour/utility-go v0.0.0-20250129074708-cc4329f3a409/go.mod h1:5qFSFV1HslVcZt8gGYeyLO715g0s1+5+7f/gMFfB9PE=
