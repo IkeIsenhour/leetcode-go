@@ -45,3 +45,11 @@ The length of this window can always be calculated by "(right - left) + 1"
    window technique with a HashSet/HashMap for it's optimal solution. First, we begin with left and right at index 0. As we loop through the string, we check
    if the window is valid. If valid, we add the character at "right" to the HashSet, calculate the length, check if the length is greater than longest, and
    increment right. If invalid, we remove "left" from the HashMap and increment "left", repeating this until "right" is not in the map anymore.
+
+## Running Count Algorithm
+
+### Description
+
+### Problems
+
+1. [Majority Element](https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150)
