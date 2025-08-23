@@ -20,18 +20,24 @@
 
 ### Description
 
+Usually involves a situation in which you have to associate one thing with another thing. HashMap solutions
+tend to be pretty intuitive, and can often be used in the brute force form of a solution. Can also be the optimal solution, like we see with
+the word pattern problem. The key with HashMaps is the constant lookup time, making them a much more efficient option than other collection
+types for a key:value lookup.
+
 ### Problems
 
 1. [Ransom Note](https://leetcode.com/problems/ransom-note/description/)
+2. [Word Pattern](https://leetcode.com/problems/word-pattern/description/)
 
-## Sliding Window:
+## Sliding Window
 
 ### Description
 
-1. Left and Right boundaries, moving each separately to "slide" the window. Need to make sure that the window is always valid. Typically that means the left and
-   right boundaries are withing the bounds of the array/string that they are iterating. Equally, whatever else "valid" means for that question
-   (example: cannot have duplicates in string). When the window is valid, we increment "right". When the window is invalid, we increment "left".
-   The length of this window can always be calculated by "(right - left) + 1"
+Left and Right boundaries, moving each separately to "slide" the window. Need to make sure that the window is always valid. Typically that means the left and
+right boundaries are withing the bounds of the array/string that they are iterating. Equally, whatever else "valid" means for that question
+(example: cannot have duplicates in string). When the window is valid, we increment "right". When the window is invalid, we increment "left".
+The length of this window can always be calculated by "(right - left) + 1"
 
 ### Problems
 
