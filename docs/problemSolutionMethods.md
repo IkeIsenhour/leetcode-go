@@ -1,5 +1,41 @@
-Two Pointer
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+# Leetcode Solution Types and Corresponding Questions
 
-Recursion
-- [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+## Two Pointer
+
+### Description
+
+### Problems
+
+1. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
+## Recursion
+
+### Description
+
+### Problems
+
+1. [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+
+## HashMap
+
+### Description
+
+### Problems
+
+1. [Ransom Note](https://leetcode.com/problems/ransom-note/description/)
+
+## Sliding Window:
+
+### Description
+
+1. Left and Right boundaries, moving each separately to "slide" the window. Need to make sure that the window is always valid. Typically that means the left and
+   right boundaries are withing the bounds of the array/string that they are iterating. Equally, whatever else "valid" means for that question
+   (example: cannot have duplicates in string). When the window is valid, we increment "right". When the window is invalid, we increment "left".
+   The length of this window can always be calculated by "(right - left) + 1"
+
+### Problems
+
+1. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) uses the sliding
+   window technique with a HashSet/HashMap for it's optimal solution. First, we begin with left and right at index 0. As we loop through the string, we check
+   if the window is valid. If valid, we add the character at "right" to the HashSet, calculate the length, check if the length is greater than longest, and
+   increment right. If invalid, we remove "left" from the HashMap and increment "left", repeating this until "right" is not in the map anymore.
