@@ -16,7 +16,7 @@
 
 1. [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 
-## HashMap
+## HashMap/HashSet
 
 ### Description
 
@@ -29,6 +29,7 @@ types for a key:value lookup.
 
 1. [Ransom Note](https://leetcode.com/problems/ransom-note/description/)
 2. [Word Pattern](https://leetcode.com/problems/word-pattern/description/)
+3. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)
 
 ## Sliding Window
 

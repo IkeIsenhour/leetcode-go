@@ -36,3 +36,9 @@ print(a.strip())  # returns "Hello, World!"
 print(a.replace("H", "J"))
 print(a.split(","))  # returns ['Hello', ' World!']
 ## For Loops
+
+
+for i in range(256):
+    binary = format(i, "08b")  # 8-bit binary representation
+    char = chr(i)  # Character from Unicode code point
+    print(f"Decimal: {i:3} | Binary: {binary} | Char: {repr(char)}")
