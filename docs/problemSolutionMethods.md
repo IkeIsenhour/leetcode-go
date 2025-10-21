@@ -54,3 +54,14 @@ The length of this window can always be calculated by "(right - left) + 1"
 ### Problems
 
 1. [Majority Element](https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150)
+
+## Traversing Linked List
+
+### Description
+
+Really just understanding how to traverse a linked list. Often requires keeping track of the current and/or previous while we set the next or val properties
+equal to some temprary value that we will throw away on the next loop. Traversing specifically comes down to looping over the linked list until next is null.
+
+### Problems
+
+1. [Majority Element](https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150)
