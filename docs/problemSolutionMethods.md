@@ -30,6 +30,7 @@ types for a key:value lookup.
 1. [Ransom Note](https://leetcode.com/problems/ransom-note/description/)
 2. [Word Pattern](https://leetcode.com/problems/word-pattern/description/)
 3. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)
+4. [Happy Number](https://leetcode.com/problems/happy-number/description/)
 
 ## Sliding Window
 
