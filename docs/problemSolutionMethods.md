@@ -65,3 +65,25 @@ equal to some temprary value that we will throw away on the next loop. Traversin
 ### Problems
 
 1. [Majority Element](https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150)
+
+## Depth First Search
+
+### Description
+
+An algorithm used to search a Binary Tree or Graph. As opposed to Breadth First Search, DFS explores as far as possible on a branch before
+backtracking. It is typically accomplished with recursion or a stack. It is useful for exploring all paths.
+
+### Problems
+
+1. [Maximum Depth of a Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+
+## Breadth First Search
+
+### Description
+
+An algorithm used to search a Binary Tree or Graph. As opposed to Depth First Search, BFS explores all neighbors at the current depth before
+moving onto the next depth. It is typically accomplished using a queue. It is useful for finding the shortest path.
+
+### Problems
+
+1. []()
