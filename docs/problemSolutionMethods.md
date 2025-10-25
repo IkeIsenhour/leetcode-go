@@ -76,6 +76,8 @@ backtracking. It is typically accomplished with recursion or a stack. It is usef
 ### Problems
 
 1. [Maximum Depth of a Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+2. [Same Tree](https://leetcode.com/problems/same-tree/description/)
+3. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)
 
 ## Breadth First Search
 
