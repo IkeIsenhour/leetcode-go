@@ -90,3 +90,14 @@ moving onto the next depth. It is typically accomplished using a queue. It is us
 ### Problems
 
 1. []()
+
+## Binary Search
+
+### Description
+
+An algorithm used to search a list, this algorithm can only be used in a sorted list. It uses the fact that a list is sorted to implement the logic of
+consistently checking the middle. If the target you are searching for is greater than or less than the middle.
+
+### Problems
+
+1. [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
