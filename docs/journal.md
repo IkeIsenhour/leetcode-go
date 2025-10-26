@@ -37,3 +37,16 @@ same number again so you have already proven this path will never resolve to 1.
 After that realization, it is a pretty straightforward implementation of the business logic. Store the numbers you've seen in a hash set,
 follow their rules to get to the next number, store that number and repeat. Check if you've hit your base cases and eventually return true
 or false.
+
+## Saturday, October 25, 2025
+
+Today I worked on one problem: `Search Insert Position`. This problem involves searching through a sorted array for a target value. If
+you find the value, return it's index. If you don't find it, return the index it should be at.
+
+The big giveaway on this problem is firstly that the array is sorted and secondly that they want a solution in O(log n) time. Both
+these are strong indicators that the problem is looking for a binary search solution, which is exactly what is implemented. A typical
+binary search implementation is defining a low index and a high index. Add those two indexes together and divide by two to the middle
+index of those two numbers. Check if target is equal to the middle index and keep dong this loop until you find the target.
+
+The only unique thing about this problem is that it also wants you to return where a number would be if it is not in the list. You have to either
+add our subtract 1 to the final result you get for middle in the case that you don't find the target, but that's about it. Pretty straightforward.
