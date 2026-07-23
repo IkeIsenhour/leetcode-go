@@ -13,3 +13,10 @@
    Once a node is null, just return 0 for it. Otherwise, it's in-place addition where you carry over the carry and just
    keep creating a new node with the two values + the carry. The leftover carry, if any, goes to the next iteration.
    With this solution, you iterate two lists and create the new one all in place.
+
+3. LONGEST SUBSTRING WITHOUT REPEATING CHARACTERS (Sliding Window, Hash Set)
+   Uses a sliding window algorithm to focus on a subset of characters and a Hash Set to track what characters
+   have already been seen.The key here is to recognize that you don't need to initialize right to 0, you can just
+   use right as the iterator of the for loop, and then do a while loop within to remove characters until the next
+   right character is valid again.
+   At the end of the day, this is really just adding/removing from a set and incrementing indices accordingly.
