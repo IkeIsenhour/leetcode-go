@@ -20,3 +20,12 @@
    use right as the iterator of the for loop, and then do a while loop within to remove characters until the next
    right character is valid again.
    At the end of the day, this is really just adding/removing from a set and incrementing indices accordingly.
+
+4. ZIGZAG CONVERSIONS (2-D Matrix, Top-Level Index Tracking w/ Directional Tracker)
+   Uses a 2-D matrix to create each sub-set of the string. Using a directional tracker that
+   oscillates between -1 and 1 depending on if we've hit the bottom. Bottom is determined by the
+   length of the number of rows. The key here is that we're no moving within each of the inner lists, but
+   just within the top-level list (matrix). Also, don't focus too much on the "zigzag" pattern,
+   at the end of the day it's more of a row based combination of the characters. The zigzag is just a
+   visual representation of how the rows are defined, but you don't need to focus on horizontal
+   spacing like that.
