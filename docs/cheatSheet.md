@@ -50,3 +50,14 @@ realize that when given a list of consecutive natural number, if you can find th
 from that to find the missing numbers. This is possible to do in O(n) time by using the formula mentioned earlier to get
 the expected total (the total in the case that every number was present). From there it is a simple for loop with subtraction
 to find the missing number.
+
+## 448. Find All Numbers Disappeared in an Array
+
+In this problem, you need to utilize the key fact that the numbers will be in the range of 1 to n (the length of the list). The brute
+force solution is just to make a set out of the given numbers, then loop through each number in the range checking if it exists in the set
+and adding to a return list if it does not exist in the set.
+
+The more optimized approach is to avoid using extra memory by modifying the original list in place (extra memory does not prohibit making a
+separate return list). In order to accomplish this, you just need to make numbers at an index negative and then use the absolute value
+for the number at each index to see what number it originally was. Finally, you can loop back through the list one more time to see what is
+not negative and build a return list out of that.
