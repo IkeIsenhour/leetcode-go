@@ -114,6 +114,38 @@ class Solution:
 
         return dummy.next
 
+    def addTwoNumbersJuly2026(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
+        numA, numB = 0, 0
+        base = 1
+
+        while l1 or l2:
+            if l1 is not None:
+                val = l1.val * base
+                numA += val
+                l1 = l1.next
+            if l2 is not None:
+                val = l2.val * base
+                numB += val
+                l2 = l2.next
+            base *= 10
+
+        total = numA + numB
+        head = ListNode()
+        curr = head
+        while total > 0:
+            val = total % 10
+            curr.val = val
+
+            total = total // 10
+            if total > 0:
+                nxt = ListNode()
+                curr.next = nxt
+                curr = nxt
+
+        return head
+
 
 ## Number is 4321 1 --> 2 --> 3 --> 4
 node4 = ListNode(4, None)

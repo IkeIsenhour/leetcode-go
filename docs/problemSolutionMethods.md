@@ -96,7 +96,9 @@ moving onto the next depth. It is typically accomplished using a queue. It is us
 ### Description
 
 An algorithm used to search a list, this algorithm can only be used in a sorted list. It uses the fact that a list is sorted to implement the logic of
-consistently checking the middle. If the target you are searching for is greater than or less than the middle.
+consistently checking the middle. If the target you are searching for is greater than or less than the middle. This utilizes a
+left, right, and middle pointer that move positions based on how the middle value compares to the search target. Either
+left or right will replace middle, setting a new boundary and finding the new middle.
 
 ### Problems
 
